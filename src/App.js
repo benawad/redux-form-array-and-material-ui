@@ -1,10 +1,11 @@
 import React from "react";
-import { Field, reduxForm } from "redux-form";
 import MyForm from "./MyForm";
+import SimpleTable from "./SimpleTable";
 
 const App = () => (
   <div>
-    <MyForm />
+    <MyForm onSubmit={values => console.log(values)} />
+    <SimpleTable />
   </div>
 );
 
